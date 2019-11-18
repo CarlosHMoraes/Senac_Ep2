@@ -10,7 +10,7 @@ class TaxiNYC(MRJob):
     def busca_valor(self, _, line):
         colunas = [s.strip('"') for s in line.split(',')]
         if colunas[16] != 'total_amount':
-            yield 'valor_total', float(colunas[16])
+            yield colunas[1][0:10], float(colunas[16])
 
     def soma_valor(self, key, values):
         yield key, sum(values)
