@@ -22,3 +22,4 @@ python taxi1_ep3.py hdfs:///user/root/ep3/input/* -r hadoop
 python taxi2_ep3.py hdfs:///user/root/ep3/input/* -r hadoop
 
 # Valor médio de corrida a cada 15 minutos
+python taxi3_ep3.py hdfs:///user/root/ep3/input/* -r hadoop
